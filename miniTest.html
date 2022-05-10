@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<input type="text" id="a" placeholder="nhập a">
+<input type="text" id="b" placeholder="nhập b">
+<button id="S" onclick="hienS()">Tính S=a*b</button>
+<h3>bài 4</h3>
+<button id="a1" onclick="nhapa()">Nhập A</button>
+<h1></h1>
+</body>
+<script>
+    //bài 1 Câu lệnh alert() để hiện thị 1 hộp thoại. Cú pháp hiển thị tên lên hộp thoại là alert('name'+name)
+    //2.	Câu lệnh prompt để nhận 1 giá trị từ 1 hộp thoại
+    //bài 3
+    var name=prompt("Nhập tên của bạn:")
+    alert('Tên bạn là:'+name)
+    var giatri=prompt('Nhập giá trị:')
+    alert('Bình phương của giá trị đó là:'+giatri**2)
+
+    let a=document.getElementById(parseInt("a"))
+    let b=document.getElementById(parseInt("b"))
+    let s= a*b
+    function hienS(){
+        document.getElementById("S")
+        document.write('Tổng S:'+s)
+    }
+//bài 4
+    function nhapa(){
+        var A=parseInt(prompt("nhập a:"))
+    }
+
+</script>
+
+
+
+</html>
