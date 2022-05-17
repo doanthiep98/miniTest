@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // bai 1
+
+  //   let n = +prompt("Nhập vào số phần tử của mảng: ")
+  //   array = new Array(n)
+  // let count= 0
+  //   for (let i = 0; i < array.length; i++) {
+  //     array[i] = prompt("Nhập vào phần tử thứ " + (i + 1))
+  //   }
+  // for (let i = 0; i <n; i++) {
+  //   if (array[i]%2==0)
+  //       count++
+  // }
+  // console.log("số phần tử chẵn là:"+count)
+
+  // bai 2
+  // let n = +prompt("Nhập vào số phần tử của mảng: ")
+  // array = new Array(n)
+  // let count= 0
+  // for (let i = 0; i < array.length; i++) {
+  //   array[i] = prompt("Nhập vào phần tử thứ " + (i + 1))
+  // }
+  // let a= prompt("Nhập phần tử a:")
+  // for (let i = 0; i < n; i++) {
+  //   if(a==array[i]){
+  //     count++
+  //   }
+  // }
+  // console.log("Số phần tử a:"+count)
+
+  //bai 3
+  let n = +prompt("Nhập vào số phần tử của mảng: ")
+  array = new Array(n)
+  let count= 0
+  for (let i = 0; i < array.length; i++) {
+    array[i] = prompt("Nhập vào phần tử thứ " + (i + 1))
+  }
+  let nt=2
+  for (let k = 0; k < array.length; ) {
+    let check = false
+    for (let j = 2; j < array[j]; j++) {
+      if (array[i] % j === 0) {
+        check = true
+        break
+      }
+    }
+    if (!check) {
+      count+=array[j]
+      k++
+    }
+    nt++
+  }
+console.log("tổng số nguyên tố:"+count)
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
